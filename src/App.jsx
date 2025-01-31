@@ -1,14 +1,15 @@
-import { useState } from "react";
+import React from "react";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./components/navBar";
+import HeroSection from "./components/heroSection";
+import ETCVersary from "./components/etcVersary";
 
 function App() {
   return (
     <>
-      <div className="bg-yellowCustom font-primary">Hello this is a test</div>
-      <div className="font-secondary">
-        test text Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Nulla non excepturi vero mollitia enim nobis nostrum expedita neque cum.
-        Unde quidem molestiae harum eos natus amet iste accusamus eveniet in!
-      </div>
+      <NavBar></NavBar>
+      <HeroSection></HeroSection>
+      <ETCVersary></ETCVersary>
     </>
   );
 }
