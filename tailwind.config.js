@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
     extend: {
       fontFamily: {
         primary: ["Azonix", "sans-serif"],
         secondary: ["Montserrat", "sans-serif"],
       },
-    },
-    colors: {
-      blueCustom: " #021832",
-      yellowCustom: "#FFDF00C2",
-      redCustom: "#BB0000",
+      colors: {
+        blueCustom: " #021832",
+        yellowCustom: "#FFDF00C2",
+        redCustom: "#BB0000",
+      },
     },
   },
   plugins: [],
