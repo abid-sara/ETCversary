@@ -3,6 +3,34 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import SpeakerCard from "./SpeakerCard";
 import samplePic from "./../../assets/sample.png";
 
+const speakers = [
+  {
+    name: "Dr. Mohamed 1",
+    description: "Some description",
+    pic: samplePic,
+  },
+  {
+    name: "Dr. Mohamed 2",
+    description: "Another description",
+    pic: samplePic,
+  },
+  {
+    name: "Dr. Mohamed 3",
+    description: "Description for speaker 3",
+    pic: samplePic,
+  },
+  {
+    name: "Dr. Mohamed 4",
+    description: "Description for speaker 4",
+    pic: samplePic,
+  },
+  {
+    name: "Dr. Mohamed 5",
+    description: "Description for speaker 5",
+    pic: samplePic,
+  },
+];
+
 const Speakers = () => {
   const scrollRef = useRef(0);
   const cardWidth = 512 + 40;
@@ -28,15 +56,15 @@ const Speakers = () => {
           className="flex justify-center sm:justify-start sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
-          {[...Array(5)].map((_, index) => (
+          {speakers.map((speaker, index) => (
             <div
               key={index}
               className="shrink-0 w-[90%] sm:w-[412px] scroll-snap-align-start mx-2"
             >
               <SpeakerCard
-                name={`Dr. Mohamed ${index + 1}`}
-                description="Some description"
-                pic={samplePic}
+                name={speaker.name}
+                description={speaker.description}
+                pic={speaker.pic}
               />
             </div>
           ))}
