@@ -12,7 +12,7 @@ import {
   FaDiscord, 
   FaPhone,       
   FaMapMarkerAlt, 
-  FaEnvelope      
+  FaEnvelope  
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -55,18 +55,18 @@ const Footer = () => {
               Contact Us:
             </h3>
             <div className="flex flex-col space-y-3">
-              <div className="flex items-center space-x-3">
-                <img src={phoneIcon} alt="Phone" className="w-6 h-6 md:w-8 md:h-8" />
-                <p className="text-sm md:text-lg font-secondary text-white">+213697073877</p>
-              </div>
-              <div className="flex items-center space-x-3">
-                <img src={locationIcon} alt="Location" className="w-6 h-6 md:w-8 md:h-8" />
-                <p className="text-sm md:text-lg font-secondary text-white">Ensia Sidi Abdellah</p>
-              </div>
-              <div className="flex items-center space-x-3">
-                <img src={emailIcon} alt="Email" className="w-6 h-6 md:w-8 md:h-8" />
-                <p className="text-sm md:text-lg font-secondary text-white">tech-community@ensia.edu.dz</p>
-              </div>
+            <div className="flex items-center space-x-3">
+      <FaPhone className="text-yellowCustom" size={24} />
+      <p className="text-sm md:text-lg font-secondary text-white">+213697073877</p>
+    </div>
+    <div className="flex items-center space-x-3">
+      <FaMapMarkerAlt className="text-yellowCustom" size={24} />
+      <p className="text-sm md:text-lg font-secondary text-white">Ensia Sidi Abdellah</p>
+    </div>
+    <div className="flex items-center space-x-3">
+      <FaEnvelope className="text-yellowCustom" size={24} />
+      <p className="text-sm md:text-lg font-secondary text-white">tech-community@ensia.edu.dz</p>
+    </div>
             </div>
           </div>
         </div>
