@@ -1,25 +1,25 @@
-import { useState } from "react";
-import Footer from "./footer.jsx";  // Import the Footer component
-import AboutETC from "./AboutETC.jsx";
+import React from "react";
+//import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./components/navBar";
+import HeroSection from "./components/heroSection";
+import ETCVersary from "./components/etcVersary";
+import Agenda from "./components/agenda/Agenda";
+import Speakers from "./components/speakers/Speakers";
+import Sponsors from "./components/sponsors/sponsors";
+import AboutEtc from "./components/AboutETC";
+import Footer from "./components/footer";
+
 function App() {
   return (
     <>
-      {/* Apply custom blue background */}
-      <div className="bg-blueCustom font-primary text-white p-4">
-        {/* <div>
-        Hello this is a test
-      </div>
-      <div >
-        test text Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Nulla non excepturi vero mollitia enim nobis nostrum expedita neque cum.
-        Unde quidem molestiae harum eos natus amet iste accusamus eveniet in!
-       
-      </div> */}
-      <AboutETC />
-      <Footer />
-      </div>
-      {/* Add Footer component here */}
-       {/* This will render the Footer component */}
+      <NavBar></NavBar>
+      <HeroSection></HeroSection>
+      <ETCVersary></ETCVersary>
+      <Agenda></Agenda>
+      <Speakers></Speakers>
+      <Sponsors></Sponsors>
+      <AboutEtc></AboutEtc>
+      <Footer></Footer>
     </>
   );
 }
