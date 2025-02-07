@@ -1,7 +1,4 @@
 import logo from "/images/logoETC.png";
-import phoneIcon from "../assets/icons/phone.png";
-import locationIcon from "../assets/icons/location.png";
-import emailIcon from "../assets/icons/email.png";
 import { 
   FaFacebook, 
   FaInstagram, 
