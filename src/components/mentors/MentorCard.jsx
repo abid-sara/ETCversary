@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const MentorCard = ({ name, description, pic, ig, fb, gh }) => {
   return (

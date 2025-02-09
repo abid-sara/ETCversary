@@ -44,7 +44,7 @@ const Mentors = () => {
   };
 
   return (
-    <div className="bg-blueCustom h-full flex flex-col px-4 sm:px-8 md:px-32 items-center py-10 relative">
+    <div className="bg-blueCustom h-full flex flex-col px-4 sm:px-8 md:px-32 items-center py-10 relative my-10">
       <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl text-yellowCustom mb-10 text-center">
         Our Mentors
       </h2>

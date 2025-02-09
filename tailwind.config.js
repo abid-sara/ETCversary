@@ -15,6 +15,9 @@ export default {
         yellowLight: "rgb(216, 193, 23)",
         blueGray: "rgb(14, 33, 47)",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(circle, var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],

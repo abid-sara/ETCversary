@@ -35,7 +35,6 @@ const Speakers = () => {
   const scrollRef = useRef(0);
   const cardWidth = 512 + 40;
 
-  // Scroll functions
   const scrollLeft = () => {
     if (scrollRef.current) scrollRef.current.scrollLeft -= cardWidth;
   };
@@ -45,7 +44,7 @@ const Speakers = () => {
   };
 
   return (
-    <div className="bg-blueCustom h-full flex flex-col px-4 sm:px-8 md:px-32 items-center py-10 relative">
+    <div className="bg-blueCustom h-full flex flex-col px-4 sm:px-8 md:px-32 items-center py-10 relative my-10">
       <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl text-yellowCustom mb-10 text-center">
         Our Speakers
       </h2>

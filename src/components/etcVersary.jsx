@@ -2,7 +2,7 @@ import React from "react";
 
 const ETCVersary = () => {
   return (
-    <div className="bg-blueCustom min-h-screen flex flex-col items-center pt-12 px-4">
+    <div className="bg-blueCustom h-auto flex flex-col items-center py-10 my-10">
       <h1 className="text-white font-primary text-3xl sm:text-4xl text-center">
         <span className="text-yellowCustom">etc</span>versary
       </h1>

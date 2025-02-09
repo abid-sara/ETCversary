@@ -1,12 +1,12 @@
 import React from "react";
 const AboutSection = () => {
   return (
-    <div className="about-section bg-blueCustom">
-      <h2 className="text-yellowCustom text-2xl md:text-3xl lg:text-4xl font-primary uppercase mb-4 text-center">
+    <div className="about-section bg-blueCustom py-10 my-10">
+      <h2 className="text-yellowCustom text-2xl md:text-3xl lg:text-4xl font-primary uppercase mb-6 text-center ">
         About ETC
       </h2>
 
-      <div className="flex items-center justify-center min-h-screen px-4">
+      <div className="flex items-start justify-center h-auto px-4 ">
         {/* Gradient Border Container */}
         <div
           className="relative p-[2px] rounded-[20px] w-full max-w-3xl"
@@ -28,21 +28,23 @@ const AboutSection = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-blueGray/70 text-white p-6 sm:p-7 tracking-wider leading-loose rounded-[18px] border border-white/60 flex">
               {/* Scrollable Text Box */}
               <div className="w-full h-full pt-10 overflow-y-auto p-2 scrollbar-hide">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac eros ut ex
-                pellentesque tincidunt. Proin malesuada, lectus vitae vestibulum facilisis, nunc massa
-                vehicula justo, non aliquet risus est id metus. Duis fringilla mi at orci auctor,
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                ac eros ut ex pellentesque tincidunt. Proin malesuada, lectus
+                vitae vestibulum facilisis, nunc massa vehicula justo, non
+                aliquet risus est id metus. Duis fringilla mi at orci auctor,
                 non aliquam eros suscipit. Sed non eros nulla...
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac eros ut ex
-                pellentesque tincidunt. Proin malesuada, lectus vitae vestibulum facilisis, nunc massa
-                vehicula justo, non aliquet risus est id metus. Duis fringilla mi at orci auctor,
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                ac eros ut ex pellentesque tincidunt. Proin malesuada, lectus
+                vitae vestibulum facilisis, nunc massa vehicula justo, non
+                aliquet risus est id metus. Duis fringilla mi at orci auctor,
                 non aliquam eros suscipit. Sed non eros nulla...
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac eros ut ex
-                pellentesque tincidunt. Proin malesuada, lectus vitae vestibulum facilisis, nunc massa
-                vehicula justo, non aliquet risus est id metus. Duis fringilla mi at orci auctor,
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                ac eros ut ex pellentesque tincidunt. Proin malesuada, lectus
+                vitae vestibulum facilisis, nunc massa vehicula justo, non
+                aliquet risus est id metus. Duis fringilla mi at orci auctor,
                 non aliquam eros suscipit. Sed non eros nulla...
-                
               </div>
             </div>
           </div>
