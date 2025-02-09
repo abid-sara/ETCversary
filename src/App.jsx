@@ -5,6 +5,7 @@ import HeroSection from "./components/heroSection";
 import ETCVersary from "./components/etcVersary";
 import Agenda from "./components/agenda/Agenda";
 import Speakers from "./components/speakers/Speakers";
+import Mentors from "./components/mentors/Mentors";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ETCVersary></ETCVersary>
       <Agenda></Agenda>
       <Speakers></Speakers>
+      <Mentors></Mentors>
     </>
   );
 }
