@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
-import NavBar from "./components/NavBar";
-import HeroSection from "./components/HeroSection";
-import ETCVersary from "./components/ETCVersary";
+import NavBar from "./components/navBar";
+import HeroSection from "./components/heroSection";
+import ETCVersary from "./components/etcVersary";
 import Agenda from "./components/agenda/Agenda";
 import Speakers from "./components/speakers/Speakers";
 import Mentors from "./components/mentors/Mentors";
-import Sponsors from "./components/sponsors/Sponsors";
+import Sponsors from "./components/sponsors/sponsors";
 import AboutEtc from "./components/AboutETC";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 
 const App = () => {
   const sectionsRef = {
