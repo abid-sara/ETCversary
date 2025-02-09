@@ -58,19 +58,17 @@ const secondColumn = activities.slice(midIndex);
 
 const Agenda = () => {
   return (
-    <div className="bg-blueCustom h-full flex flex-col px-4 md:px-32 items-center pb-20">
+    <div className="bg-blueCustom h-full flex flex-col px-4 md:px-32 items-center py-10 my-10">
       <h2 className="font-primary text-3xl md:text-4xl text-yellowCustom mb-10">
         AGENDA
       </h2>
       <div className="w-full flex flex-col md:grid md:grid-cols-2 gap-8">
-        {/* First Column */}
         <div className="flex flex-col gap-8">
           {firstColumn.map((activity, index) => (
             <TimelineItem key={index} {...activity} />
           ))}
         </div>
 
-        {/* Second Column */}
         <div className="flex flex-col gap-8">
           {secondColumn.map((activity, index) => (
             <TimelineItem key={index + midIndex} {...activity} />

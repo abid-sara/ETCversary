@@ -1,31 +1,40 @@
 import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import SponsorCard from "./sponsorsCard";
+import MentorCard from "./MentorCard";
 import samplePic from "./../../assets/sample.png";
 
-const sponsors = [
+const mentors = [
   {
-    name: "Dr. Mohamed Mohamed",
+    name: "Dr. Mohamed 1",
     description: "Some description",
     pic: samplePic,
   },
   {
-    name: "Dr. Mohamed Mohamed",
-    description: "Some description",
+    name: "Dr. Mohamed 2",
+    description: "Another description",
     pic: samplePic,
   },
   {
-    name: "Dr. Mohamed Mohamed",
-    description: "Some description",
+    name: "Dr. Mohamed 3",
+    description: "Description for speaker 3",
+    pic: samplePic,
+  },
+  {
+    name: "Dr. Mohamed 4",
+    description: "Description for speaker 4",
+    pic: samplePic,
+  },
+  {
+    name: "Dr. Mohamed 5",
+    description: "Description for speaker 5",
     pic: samplePic,
   },
 ];
 
-const Sponsors = () => {
+const Mentors = () => {
   const scrollRef = useRef(0);
   const cardWidth = 512 + 40;
 
-  // Scroll functions
   const scrollLeft = () => {
     if (scrollRef.current) scrollRef.current.scrollLeft -= cardWidth;
   };
@@ -37,24 +46,23 @@ const Sponsors = () => {
   return (
     <div className="bg-blueCustom h-full flex flex-col px-4 sm:px-8 md:px-32 items-center py-10 relative my-10">
       <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl text-yellowCustom mb-10 text-center">
-        Our Sponsors
+        Our Mentors
       </h2>
-
       <div className="relative w-full">
         <div
           ref={scrollRef}
           className="flex justify-center sm:justify-start sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
-          {sponsors.map((speaker, index) => (
+          {mentors.map((mentor, index) => (
             <div
               key={index}
               className="shrink-0 w-[90%] sm:w-[412px] scroll-snap-align-start mx-2"
             >
-              <SponsorCard
-                name={speaker.name}
-                description={speaker.description}
-                pic={speaker.pic}
+              <MentorCard
+                name={mentor.name}
+                description={mentor.description}
+                pic={mentor.pic}
               />
             </div>
           ))}
@@ -78,4 +86,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default Mentors;
