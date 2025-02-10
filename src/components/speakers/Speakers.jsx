@@ -52,13 +52,13 @@ const Speakers = () => {
       <div className="relative w-full">
         <div
           ref={scrollRef}
-          className="flex justify-center sm:justify-start sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
+          className="flex justify-start gap-20 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {speakers.map((speaker, index) => (
             <div
               key={index}
-              className="shrink-0 w-[90%] sm:w-[412px] scroll-snap-align-start mx-2"
+              className="shrink-0 w-[90%] sm:w-auto scroll-snap-align-start mx-2"
             >
               <SpeakerCard
                 name={speaker.name}
