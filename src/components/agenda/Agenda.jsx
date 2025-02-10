@@ -62,14 +62,14 @@ const Agenda = () => {
       <h2 className="font-primary text-3xl md:text-4xl text-yellowCustom mb-10">
         AGENDA
       </h2>
-      <div className="w-full flex flex-col md:grid md:grid-cols-2 gap-8">
-        <div className="flex flex-col gap-8">
+      <div className="w-full flex flex-col md:grid md:grid-cols-2 gap-12 sm:gap-8">
+        <div className="flex flex-col gap-12 sm:gap-8">
           {firstColumn.map((activity, index) => (
             <TimelineItem key={index} {...activity} />
           ))}
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-12 sm:gap-8">
           {secondColumn.map((activity, index) => (
             <TimelineItem key={index + midIndex} {...activity} />
           ))}
