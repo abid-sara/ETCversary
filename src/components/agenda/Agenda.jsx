@@ -69,7 +69,7 @@ const Agenda = () => {
           ))}
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-12 sm:gap-8">
           {secondColumn.map((activity, index) => (
             <TimelineItem key={index + midIndex} {...activity} />
           ))}
