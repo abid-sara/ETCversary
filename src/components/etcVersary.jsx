@@ -7,7 +7,7 @@ const ETCVersary = () => {
         <span className="text-yellowCustom">etc</span>versary
       </h1>
 
-      <div className="flex justify-center pt-8">
+      <div className="flex justify-center pt-8 mx-8">
         <div
           className="relative p-[1px] rounded-[20px] w-full max-w-[900px]"
           style={{

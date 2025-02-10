@@ -45,13 +45,13 @@ const Mentors = () => {
 
   return (
     <div className="bg-blueCustom h-full flex flex-col px-4 sm:px-8 md:px-32 items-center py-10 relative my-10">
-      <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl text-yellowCustom mb-10 text-center">
+      <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl text-yellowCustom mb-4 sm:mb-10 text-center">
         Our Mentors
       </h2>
       <div className="relative w-full">
         <div
           ref={scrollRef}
-          className="flex justify-center sm:justify-start sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
+          className="flex justify-start sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {mentors.map((mentor, index) => (

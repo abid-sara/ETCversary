@@ -43,13 +43,13 @@ const Sponsors = () => {
       <div className="relative w-full">
         <div
           ref={scrollRef}
-          className="flex justify-center sm:justify-start sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
+          className="flex justify-start gap-20 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {sponsors.map((speaker, index) => (
             <div
               key={index}
-              className="shrink-0 w-[90%] sm:w-[412px] scroll-snap-align-start mx-2"
+              className="w-[90%] sm:w-auto shrink-0 scroll-snap-align-start mx-2"
             >
               <SponsorCard
                 name={speaker.name}

@@ -6,7 +6,7 @@ const AboutSection = () => {
         About ETC
       </h2>
 
-      <div className="flex items-start justify-center h-auto px-4 ">
+      <div className="flex items-start justify-center h-auto px-4">
         {/* Gradient Border Container */}
         <div
           className="relative p-[2px] rounded-[20px] w-full max-w-3xl"
