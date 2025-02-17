@@ -2,33 +2,22 @@ import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import MentorCard from "./MentorCard";
 import samplePic from "./../../assets/sample.png";
+import male from "./../../assets/male.jpg";
+import female from "./../../assets/female.jpg";
 
 const mentors = [
   {
-    name: "Dr. Mohamed 1",
-    description: "Some description",
-    pic: samplePic,
+    name: "AYAD Mohamed",
+    description: "Tech enthusiast & Entrepreneur at heart.",
+    pic: male,
+    instagram: "https://www.instagram.com/mouha_ay/"
   },
   {
-    name: "Dr. Mohamed 2",
-    description: "Another description",
-    pic: samplePic,
-  },
-  {
-    name: "Dr. Mohamed 3",
-    description: "Description for speaker 3",
-    pic: samplePic,
-  },
-  {
-    name: "Dr. Mohamed 4",
-    description: "Description for speaker 4",
-    pic: samplePic,
-  },
-  {
-    name: "Dr. Mohamed 5",
-    description: "Description for speaker 5",
-    pic: samplePic,
-  },
+    name: "BABOURI Roufeida",
+    description: "Dr. Veterinarian, marketer, Entreupreuner.",
+    pic: female,
+    instagram: "https://www.instagram.com/rofi_ba/"
+  }
 ];
 
 const Mentors = () => {
@@ -46,12 +35,12 @@ const Mentors = () => {
   return (
     <div className="bg-blueCustom h-full flex flex-col px-4 sm:px-8 md:px-32 items-center py-10 relative my-10">
       <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl text-yellowCustom mb-4 sm:mb-10 text-center">
-        Our Mentors
+        Our Mentors and Speakers
       </h2>
       <div className="relative w-full">
         <div
           ref={scrollRef}
-          className="flex justify-start sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
+          className="flex justify-center sm:gap-0 gap-10 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {mentors.map((mentor, index) => (
@@ -63,6 +52,7 @@ const Mentors = () => {
                 name={mentor.name}
                 description={mentor.description}
                 pic={mentor.pic}
+                ig={mentor.instagram}
               />
             </div>
           ))}

@@ -1,24 +1,16 @@
 import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import SponsorCard from "./sponsorsCard";
-import samplePic from "./../../assets/sample.png";
+import samplePic from "./../../assets/digital.jpg";
 
 const sponsors = [
   {
-    name: "Dr. Mohamed Mohamed",
-    description: "Some description",
+    name: "The Next Level Digital Solutions",
+    description: "We take your business to the next level !",
     pic: samplePic,
-  },
-  {
-    name: "Dr. Mohamed Mohamed",
-    description: "Some description",
-    pic: samplePic,
-  },
-  {
-    name: "Dr. Mohamed Mohamed",
-    description: "Some description",
-    pic: samplePic,
-  },
+    linkedin: "https://www.linkedin.com/company/the-next-level-digital-solutions/",
+    instgram: "https://www.instagram.com/tnl.digital_/"
+  }
 ];
 
 const Sponsors = () => {
@@ -43,7 +35,7 @@ const Sponsors = () => {
       <div className="relative w-full">
         <div
           ref={scrollRef}
-          className="flex justify-start gap-20 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
+          className="flex justify-center gap-20 overflow-x-auto scrollbar-hide scroll-smooth w-full pl-8 sm:pl-16 pr-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {sponsors.map((speaker, index) => (
@@ -55,6 +47,8 @@ const Sponsors = () => {
                 name={speaker.name}
                 description={speaker.description}
                 pic={speaker.pic}
+                ln={speaker.linkedin}
+                ig={speaker.instgram}
               />
             </div>
           ))}

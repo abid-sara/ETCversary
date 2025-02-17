@@ -25,6 +25,7 @@ const HeroSection = () => {
           </div>
 
           <div className="flex justify-center lg:justify-start pt-5">
+            <a href="https://forms.gle/i72P17xKfLb1LhL9A">
             <button
               className="bg-yellowLight text-white text-lg w-64 sm:w-72 h-14 sm:h-16 font-bold rounded-sm"
               style={{
@@ -33,6 +34,7 @@ const HeroSection = () => {
             >
               Register <span className="font-extrabold uppercase">Now!</span>
             </button>
+            </a>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-5 pt-10">

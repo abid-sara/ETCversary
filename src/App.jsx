@@ -31,9 +31,6 @@ const App = () => {
       <section ref={sectionsRef.agenda}>
         <Agenda />
       </section>
-      <section ref={sectionsRef.community}>
-        <Speakers />
-      </section>
       <section>
         <Mentors />
       </section>

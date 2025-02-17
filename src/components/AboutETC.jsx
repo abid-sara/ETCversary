@@ -28,23 +28,13 @@ const AboutSection = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-blueGray/70 text-white p-6 sm:p-7 tracking-wider leading-loose rounded-[18px] border border-white/60 flex">
               {/* Scrollable Text Box */}
               <div className="w-full h-full pt-10 overflow-y-auto p-2 scrollbar-hide">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                ac eros ut ex pellentesque tincidunt. Proin malesuada, lectus
-                vitae vestibulum facilisis, nunc massa vehicula justo, non
-                aliquet risus est id metus. Duis fringilla mi at orci auctor,
-                non aliquam eros suscipit. Sed non eros nulla...
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                ac eros ut ex pellentesque tincidunt. Proin malesuada, lectus
-                vitae vestibulum facilisis, nunc massa vehicula justo, non
-                aliquet risus est id metus. Duis fringilla mi at orci auctor,
-                non aliquam eros suscipit. Sed non eros nulla...
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                ac eros ut ex pellentesque tincidunt. Proin malesuada, lectus
-                vitae vestibulum facilisis, nunc massa vehicula justo, non
-                aliquet risus est id metus. Duis fringilla mi at orci auctor,
-                non aliquam eros suscipit. Sed non eros nulla...
+              ENSIA Tech Community is a dynamic scientific club founded in March 2022 at the National School of Artificial Intelligence. As the school’s central hub for technology and computer science, we provide a collaborative and stimulating environment where students, researchers, and professionals can explore, learn, and innovate.
+              
+              Our mission is to bridge the gap between theory and practice by offering hands-on projects, technical workshops, interactive courses, and inspiring events. Whether you're a beginner taking your first steps into tech or an experienced enthusiast looking to collaborate on advanced projects, our community provides the perfect space to grow your skills and expand your knowledge.
+              
+              We cover a wide range of fields, including artificial intelligence, machine learning, software development, cybersecurity, and data science. Through hackathons, guest lectures, and real-world challenges, we encourage creativity, collaboration, and meaningful innovation.
+              
+              Join us to unlock your full potential, connect with like-minded individuals, and be part of a passionate community dedicated to shaping the future of technology!
               </div>
             </div>
           </div>
